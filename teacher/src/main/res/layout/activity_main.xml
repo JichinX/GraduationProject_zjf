@@ -10,6 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin">
 
     <EditText
+        android:id="@+id/login_teacher_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/corners_5dp_gray"
@@ -17,26 +18,43 @@
         android:padding="@dimen/padding_edit_10dp" />
 
     <EditText
+        android:id="@+id/login_teacher_pwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_20dp"
         android:background="@drawable/corners_5dp_gray"
         android:hint="@string/password"
+        android:inputType="textPassword"
         android:padding="@dimen/padding_edit_10dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="right">
+        android:gravity="right"
+        android:padding="@dimen/padding_edit_10dp">
 
         <TextView
+            android:id="@+id/login_teacher_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/padding_edit_10dp"
             android:text="注册" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@color/edit_gray" />
+
+        <TextView
+            android:id="@+id/login_teacher_pwd_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？" />
     </LinearLayout>
 
     <Button
+        android:id="@+id/login_login_bt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/corners_10_blue"
