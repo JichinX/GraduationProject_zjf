@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">teacher</string>
+    <string name="name">姓名</string>
+    <string name="password">密码</string>
+</resources>
